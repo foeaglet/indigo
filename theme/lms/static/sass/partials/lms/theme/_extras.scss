@@ -76,7 +76,6 @@ header.global-header {
 
 .main-header {
   @include media-breakpoint-up(md) {
-    width: $container-width-md;
     margin: 0 auto;
     z-index: 200; // necessary to keep the header on top of other elements
   }
