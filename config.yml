@@ -1,5 +1,5 @@
 INDIGO_WELCOME_MESSAGE: "Learn from mixed dimensions"
-INDIGO_PRIMARY_COLOR: "#002b2b" # cool blue
+INDIGO_PRIMARY_COLOR: "#8c1515" # cool blue
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
