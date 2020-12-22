@@ -102,6 +102,9 @@ header.global-header .nav-links .secondary .user-image-frame {
 
 header.global-header .nav-links .secondary .dropdown-user-menu {
   position: fixed;
+   *{
+  color: $primary !important;
+}
 }
 
 /////////////////// Sign in form
