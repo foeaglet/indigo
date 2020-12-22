@@ -46,6 +46,54 @@ header.global-header {
     z-index: 200; // necessary to keep the header on top of other elements
     overflow: visible;  // fix for Safari
   }
+  
+  
+  * {
+    color: #fff !important;
+ }
+
+ .main-header{
+  @include responsive;
+
+ }
+
+ .mobile-menu *{
+  color: $primary !important;
+}
+
+ .sign-in-btn, .register-btn {
+   background: transparent !important;
+   color: #fff !important;
+   border: none !important;
+
+ }
+
+  box-shadow: none;
+  background: linear-gradient(165deg, $primary, #232569);
+  color: #fff;
+
+}
+
+
+.main-header {
+  @include media-breakpoint-up(md) {
+    width: $container-width-md;
+    margin: 0 auto;
+    z-index: 200; // necessary to keep the header on top of other elements
+  }
+  //background-color: #4c61bf;// TODO recommandé par clem
+  box-shadow: none;
+  color: #fff;
+
+}
+
+#footer-openedx {
+  @include media-breakpoint-up(md) {
+    width: 800px;
+    margin: 0 auto;
+    z-index: 200; // necessary to keep the header on top of other elements
+  }
+  
   //background-color: #4c61bf;
   box-shadow: none;
 }
@@ -187,6 +235,7 @@ nav.wrapper-preview-menu {
 .wrapper-footer {
   box-shadow: none;
   padding: 25px 40px;
+  background-color: #002b2b;
 
   .wrapper-logo {
       display: none;
@@ -205,4 +254,34 @@ nav.wrapper-preview-menu {
           text-align: right;
       }
   }
+}
+.hero-main-banner {
+  margin-top: 66px;
+  height: 520px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-text {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.hero-text strong {
+  font-size: 6rem;
+}
+
+.hero-main-banner img {
+  position: absolute !important;
+  z-index: 1;
+  width: 100vw !important;
+  object-fit: cover !important;
+  height: 100% !important;
 }
