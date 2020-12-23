@@ -1,13 +1,7 @@
-INDIGO_WELCOME_MESSAGE: "Learn from mixed dimensions"
+INDIGO_WELCOME_MESSAGE: ""
 INDIGO_PRIMARY_COLOR: "#8c1515" # cool blue
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
-# INDIGO_FOOTER_NAV_LINKS: []
+INDIGO_FOOTER_NAV_LINKS: []
 INDIGO_FOOTER_LEGAL_LINKS: []
-INDIGO_FOOTER_NAV_LINKS:
-  - title: "About"
-    url: "https://blend-ed.com/about"
-  - title: "Contact"
-    url: "https://blend-ed.com/contact"
-INDIGO_HEADER_NAV_LINKS: []
