@@ -18,6 +18,10 @@ body, body.view-profile {
   border-radius: 0;
 }
 
+.nav-links .secondary{
+  margin-right: 0px !important;
+}
+
 %t-title {
   font-family: $font-family-title;
 }
@@ -30,7 +34,7 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
   @include media-breakpoint-up(lg) {
     padding-top: $content-padding-top;
     padding-bottom: $content-padding-bottom;
-    margin-top: $header-height;
+    //margin-top: $header-height;
   }
   min-height: calc(100vh - #{$header-height + $content-padding-top + $content-padding-bottom + $footer-height}); // sticky footer
 }
@@ -79,7 +83,7 @@ header.global-header {
     margin: 0 auto;
     z-index: 200; // necessary to keep the header on top of other elements
   }
-  //background-color: #4c61bf;// TODO recommandé par clem
+  background-color: #002b2b;// TODO recommandé par clem
   box-shadow: none;
   color: #fff;
 
@@ -92,7 +96,7 @@ header.global-header {
     z-index: 200; // necessary to keep the header on top of other elements
   }
   
-  //background-color: #4c61bf;
+  background-color: #002b2b;
   box-shadow: none;
 }
 
@@ -208,6 +212,30 @@ nav.wrapper-preview-menu {
   display: inline-block;
 }
 
+.courses-container #discovery-form{
+  padding-top: 24px;
+
+}
+
+.courses-listing{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px;
+
+  .courses-listing-item{
+    width: calc(100%/3 - 20px);
+    margin: 10px;
+
+    .cover-image img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+
 /////////////////// User profile
 .view-profile .profile-self .wrapper-profile-field-account-privacy {
   margin-top: -$content-padding-top;
@@ -257,7 +285,7 @@ nav.wrapper-preview-menu {
   }
 }
 .hero-main-banner {
-  margin-top: 66px;
+  margin-top: 0px;
   height: 520px;
   width: 100%;
   position: relative;
@@ -272,12 +300,13 @@ nav.wrapper-preview-menu {
   z-index: 2;
   position: relative;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
 .hero-text strong {
-  font-size: 6rem;
+  font-size: 3rem;
+  color: #d23228;
 }
 
 .hero-main-banner img {
