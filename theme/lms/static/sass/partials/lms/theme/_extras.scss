@@ -18,12 +18,39 @@ body, body.view-profile {
   border-radius: 0;
 }
 
+.nav-links .secondary{
+  margin-right: 0px !important;
+}
+
 %t-title {
   font-family: $font-family-title;
 }
 
 h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
   font-family: $font-family-title;
+}
+
+@mixin responsive {
+  @include media-breakpoint-down(sm) {
+    width: $container-width-xs;
+  }
+  @include media-breakpoint-up(sm) {
+    width: $container-width-sm;
+  }
+  @include media-breakpoint-up(md) {
+    width: $container-width-md;
+  }
+  @include media-breakpoint-up(lg) {
+    width: $container-width-lg;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: $container-width-xl;
+  }
+  @media(min-width:1440px) {
+    width: $container-width-xxl;
+  }
+
 }
 
 #content.content-wrapper {
