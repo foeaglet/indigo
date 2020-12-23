@@ -122,11 +122,9 @@
         {% if INDIGO_FOOTER_LEGAL_LINKS %}
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
-            {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
-              <li>
-                <a href="{{ link['url'] }}">{{ link['title'] }}</a>
+             <li>
+                <a href="/" style="color:#FFF;">© 2020 blend-ED All rights reserved</a>
               </li>
-            {% endfor %}
           </ul>
         </nav>
         {% endif %}
