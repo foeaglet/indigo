@@ -89,7 +89,6 @@
               <li><a href="https://blend-ed.com/contact/" style="color:#FFF;">Contact</a></li>
           </ol>
         </nav>
-        {% endif %}
         % if context.get('include_language_selector', footer_language_selector_is_enabled()):
             <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
         % endif
