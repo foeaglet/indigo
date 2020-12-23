@@ -119,7 +119,7 @@ header.global-header {
     z-index: 200; // necessary to keep the header on top of other elements
   }
   
-  background-color: #002b2b;
+  //background-color: #002b2b;
   box-shadow: none;
 }
 
@@ -289,7 +289,7 @@ nav.wrapper-preview-menu {
   box-shadow: none;
   padding: 25px 40px;
   background-color: #002b2b;
-  text-align: left;
+  color: #fff;
 
   .wrapper-logo {
       display: none;
@@ -299,16 +299,20 @@ nav.wrapper-preview-menu {
   }
   .nav-legal ul {
       display: inline-block;
+      color: #fff;
   }
-  footer#footer-openedx .footer-about-openedx {
-      a {
-          float: none;
-      }
-      p {
-          text-align: right;
-      }
+  footer#footer-openedx .footer-about-openedx a {
+      float: right;
+      padding-top: 30px;
+      color: #fff;
   }
 }
+
+#footer-openedx {
+  @include responsive;
+
+}
+
 .hero-main-banner {
   margin-top: 0px;
   height: 520px;
